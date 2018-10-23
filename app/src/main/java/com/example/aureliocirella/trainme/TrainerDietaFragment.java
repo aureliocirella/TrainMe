@@ -107,6 +107,16 @@ public class TrainerDietaFragment extends Fragment {
 
                             db.removePastoById(uid, arrayListDieta);
                         }
+                        else
+                        {
+                            arrayListDieta.clear();
+                            arrayListDieta.add(" ");
+                            customAdapter = new CustomAdapterDieta(getActivity(), R.layout.item_layout, arrayListDieta);
+                            listViewPasti.setAdapter(customAdapter);
+
+                            db.removePastoById(uid, arrayListDieta);
+
+                        }
 
 
 

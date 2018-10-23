@@ -42,7 +42,7 @@ public class Database {
 
         mAuth = FirebaseAuth.getInstance();
         mDb = FirebaseDatabase.getInstance();
-      //  mDb.setPersistenceEnabled(true);
+        //mDb.setPersistenceEnabled(true);
         mRef = FirebaseDatabase.getInstance().getReference("profili");
     }
 
@@ -339,9 +339,9 @@ public class Database {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 Dieta dieta = new Dieta();
-                GenericTypeIndicator<HashMap<String, String>> t = new GenericTypeIndicator<HashMap<String, String>>() {
+                /*GenericTypeIndicator<HashMap<String, String>> t = new GenericTypeIndicator<HashMap<String, String>>() {
                 };
-                dieta.setPasti(dataSnapshot.child(uid).child("pasti").getValue(t));
+                dieta.setPasti(dataSnapshot.child(uid).child("pasti").getValue(t));*/
 
                     int i = 0;
                     String key;
@@ -455,9 +455,9 @@ public class Database {
 
 
                 Scheda scheda = new Scheda();
-                GenericTypeIndicator<HashMap<String, String>> t = new GenericTypeIndicator<HashMap<String, String>>() {
+                /*GenericTypeIndicator<HashMap<String, String>> t = new GenericTypeIndicator<HashMap<String, String>>() {
                 };
-                scheda.setEsercizi(dataSnapshot.child(uid).child("esercizi").getValue(t));
+                scheda.setEsercizi(dataSnapshot.child(uid).child("esercizi").getValue(t));*/
 
                     int i = 0;
                     String key;

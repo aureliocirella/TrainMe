@@ -105,6 +105,16 @@ public class TrainerSchedaFragment extends Fragment {
 
                             db.removeEserciziByUid(uid, arrayListEsercizi);
                         }
+                        else
+                        {
+                            arrayListEsercizi.clear();
+                            arrayListEsercizi.add(" ");
+                            customAdapter = new CustomAdapterDieta(getActivity(), R.layout.item_layout, arrayListEsercizi);
+                            listViewEsercizi.setAdapter(customAdapter);
+
+                            db.removeEserciziByUid(uid, arrayListEsercizi);
+
+                        }
 
                         break;
 
