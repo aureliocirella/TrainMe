@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".UserViewByTrainerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/buttonDieta2"
+        android:layout_width="395dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/roboto_slab1"
+        android:text="@string/dieta"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDettaglio" />
+
+    <Button
+        android:id="@+id/buttonScheda2"
+        android:layout_width="395dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/roboto_slab1"
+        android:text="@string/scheda"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDieta2" />
+
+    <Button
+        android:id="@+id/btnProfilo"
+        android:layout_width="395dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/roboto_slab1"
+        android:text="@string/progressi"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonScheda2" />
+
+    <TextView
+        android:id="@+id/textViewDettaglio"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/roboto_slab1"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

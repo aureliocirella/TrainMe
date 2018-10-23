@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.aureliocirella.trainme.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/toRegistration"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/toTrainerMain"
+            app:destination="@id/trainerMainFragment" />
+        <action
+            android:id="@+id/toUtenteMain"
+            app:destination="@id/utenteMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.aureliocirella.trainme.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/toUtenteMain2"
+            app:destination="@id/utenteMainFragment" />
+        <action
+            android:id="@+id/toTrainerMain2"
+            app:destination="@id/trainerMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainerMainFragment"
+        android:name="com.example.aureliocirella.trainme.TrainerMainFragment"
+        android:label="fragment_trainer_main"
+        tools:layout="@layout/fragment_trainer_main" >
+        <argument
+            android:name="trainerArg"
+            android:defaultValue=" "
+            app:argType="string" />
+        <action
+            android:id="@+id/toUserViewByTrainer"
+            app:destination="@id/userViewByTrainerFragment" />
+        <action
+            android:id="@+id/toMain2"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="trainerIdArg"
+            android:defaultValue=" "
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/utenteMainFragment"
+        android:name="com.example.aureliocirella.trainme.UtenteMainFragment"
+        android:label="fragment_utente_main"
+        tools:layout="@layout/fragment_utente_main" >
+        <argument
+            android:name="utenteArg"
+            android:defaultValue=" "
+            app:argType="string" />
+        <argument
+            android:name="useridArg"
+            android:defaultValue=" "
+            app:argType="string" />
+        <action
+            android:id="@+id/toDietaUtente"
+            app:destination="@id/dietaFragment" />
+        <action
+            android:id="@+id/toSchedaUtente"
+            app:destination="@id/schedaFragment" />
+        <action
+            android:id="@+id/toProfilo"
+            app:destination="@id/profiloFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/schedaFragment"
+        android:name="com.example.aureliocirella.trainme.SchedaFragment"
+        android:label="fragment_scheda"
+        tools:layout="@layout/fragment_scheda" >
+        <argument
+            android:name="useridArg"
+            android:defaultValue=" "
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dietaFragment"
+        android:name="com.example.aureliocirella.trainme.DietaFragment"
+        android:label="fragment_dieta"
+        tools:layout="@layout/fragment_dieta" >
+        <argument
+            android:name="useridArg"
+            android:defaultValue=" "
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/profiloFragment"
+        android:name="com.example.aureliocirella.trainme.ProfiloFragment"
+        android:label="fragment_profilo"
+        tools:layout="@layout/fragment_profilo" >
+        <action
+            android:id="@+id/toUtenteMain3"
+            app:destination="@id/utenteMainFragment" />
+        <argument
+            android:name="userid1Arg"
+            android:defaultValue=" "
+            app:argType="string" />
+        <action
+            android:id="@+id/toMain"
+            app:destination="@id/mainFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/userViewByTrainerFragment"
+        android:name="com.example.aureliocirella.trainme.UserViewByTrainerFragment"
+        android:label="fragment_user_view_by_trainer"
+        tools:layout="@layout/fragment_user_view_by_trainer" >
+        <argument
+            android:name="clientArg"
+            android:defaultValue=" "
+            app:argType="string" />
+        <action
+            android:id="@+id/toProfilo2"
+            app:destination="@id/profilo2Fragment" />
+        <action
+            android:id="@+id/toTrainerDieta"
+            app:destination="@id/trainerDietaFragment" />
+        <action
+            android:id="@+id/toTrainerScheda"
+            app:destination="@id/trainerSchedaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilo2Fragment"
+        android:name="com.example.aureliocirella.trainme.Profilo2Fragment"
+        android:label="fragment_profilo2"
+        tools:layout="@layout/fragment_profilo2" >
+        <argument
+            android:name="userArg"
+            android:defaultValue=" "
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainerDietaFragment"
+        android:name="com.example.aureliocirella.trainme.TrainerDietaFragment"
+        android:label="fragment_trainer_dieta"
+        tools:layout="@layout/fragment_trainer_dieta" >
+        <argument
+            android:name="userId"
+            android:defaultValue=" "
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainerSchedaFragment"
+        android:name="com.example.aureliocirella.trainme.TrainerSchedaFragment"
+        android:label="fragment_trainer_scheda"
+        tools:layout="@layout/fragment_trainer_scheda" />
+    <argument
+        android:name="useridArg"
+        android:defaultValue=" "
+        app:argType="string" />
+</navigation>

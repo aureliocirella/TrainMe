@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/basic</item>
+        <item>@font/bitter</item>
+        <item>@font/cantora_one</item>
+        <item>@font/fjalla_one</item>
+        <item>@font/fugaz_one</item>
+        <item>@font/montserrat</item>
+        <item>@font/roboto_slab</item>
+        <item>@font/roboto_slab1</item>
+        <item>@font/roboto_slab_thin</item>
+        <item>@font/signika_negative_light</item>
+    </array>
+</resources>

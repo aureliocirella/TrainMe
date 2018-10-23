@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TrainME</string>
+
+    <string name="nome_login">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="trainer">Trainer</string>
+    <string name="utente">Cliente</string>
+    <string name="accedi">ACCEDI</string>
+    <string name="avviso">Se sei un nuovo utente/trainer registrati cliccando qui.</string>
+    <string name="sigin">Completa i campi sottostanti per registrarti. </string>
+    <string name="iscriviti">ISCRIVITI</string>
+    <string name="registratione">Registrati qui</string>
+    <string name="lista_clienti">Lista Clienti</string>
+    <string name="benvenuto">Benvenuto</string>
+    <string name="avviso_password">La password deve contenere almeno 6 caratteri.</string>
+    <string name="avviso_email">L\'email inserita è già in uso per un altro account.</string>
+    <string name="dieta">Dieta</string>
+    <string name="scheda">Scheda</string>
+    <string name="progressi">Profilo</string>
+    <string name="gender">Sesso</string>
+    <string name="age">Età</string>
+    <string name="height">Altezza (cm)</string>
+    <string name="weight">Peso (kg)</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="client_email">Email nuovo cliente</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff2222</color>
+    <color name="colorPrimaryDark">#ac2222</color>
+    <color name="colorPrimaryDarkSfumato">#c3ff0808</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorAccent2">#b2b2b2</color>
+    <color name="colorbottonedisatt">#cbac2222</color>
+    <color name="white">#cbffffff</color>
+
+</resources>
